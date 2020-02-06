@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #fcfafa;
+  background: #223843;
+}
+html,
+body {
+  font-family: 'ABeeZee', Ariel, Helvetica, Sans-serif;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 25px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Anton', Ariel, Helvetica, Sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.45rem;
+}
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 0.35rem;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+a {
+  color: #d0e17b;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #542344;
+}
+ul li {
+  font-size: 1.5rem;
+  list-style-type: square;
+  margin: 0 0 15px 25px;
+}
+header {
+  display: block;
+  background-color: #223843;
+  background-image: url('/img/elephant-bg.jpg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  max-height: 325px;
+  width: 100%;
+}
+header h1,
+header h2 {
+  text-align: center;
+  margin: 5% auto 3% auto;
+  padding: 15px;
+  background-color: transparent;
+}
+.container {
+  width: 80%;
+  padding: 5%;
+}
+nav {
+  display: flex;
+  background-color: #542344;
+  padding: 5%;
+  width: 100%;
+  justify-content: center;
+}
+nav a,
+nav a:visited {
+  font-size: 2rem;
+  color: #fcfafa;
+  padding: 0 10px 0 10px;
+}
+nav a:hover,
+nav a:focus {
+  color: #d0e17b;
+}
+#footer {
+  background: #542344;
+  text-align: center;
+  padding: 25px 0 2px 0;
+}
+#intro {
+  display: block;
+  margin: -10% auto 0 auto;
+  background: #f26f39;
+  color: #fcfafa;
+}
+#supporter {
+  background: #fcfafa;
+  color: #542344;
+  margin: 25px auto 0 auto;
+  width: 100%;
+  padding: 10% 15%;
+}
+#supporter button {
+  border: 2px solid #f26f39;
+}
+#organizer h3,
+#supporter h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+#organizer {
+  background: #f26f39;
+  width: 80%;
+  margin: 25px auto 25px auto;
+  padding-top: 50px;
+}
+button {
+  width: 50%;
+  background: #542344;
+  color: #fcfafa;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #d0e17b;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+button:hover {
+  background: #223843;
+}
