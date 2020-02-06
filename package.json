@@ -1,0 +1,24 @@
+{
+  "name": "Marketing-Amber",
+  "version": "1.0.0",
+  "description": "Amber's Marketing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Save-The-Animals-Lambda-School/Marketing-Amber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Save-The-Animals-Lambda-School/Marketing-Amber/issues"
+  },
+  "homepage": "https://github.com/Save-The-Animals-Lambda-School/Marketing-Amber#readme",
+  "dependencies": {
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.14.6"
+  }
+}
