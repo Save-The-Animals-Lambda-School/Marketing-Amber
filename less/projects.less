@@ -2,61 +2,75 @@
 
 .projects-page {
 	background-image: url('/img/projects-bg.jpg');
-	h2 {
-		font-size: 2.5rem;
-		margin-bottom: 25px;
-		letter-spacing: 0.1rem;
-		text-align: center;
-	}
-}
-#content-container {
-	#intro {
-		display: block;
-		margin: -10% auto 0 auto;
-		background: @orange;
-		color: @grey;
-	}
-	#projects {
-		background: @grey;
-		color: @purple;
-		margin: 25px auto 0 auto;
-		width: 100%;
-		padding: 10% 15%;
-		h3 {
-			font-size: 2.5rem;
-			margin-bottom: 25px;
-			text-align: center;
-			line-height: 3.5rem;
+	background-size: contain;
+
+	#content-container {
+		#intro {
+			display: block;
+			margin: -10% auto 0 auto;
+			background: @orange;
+			color: @grey;
+			h3 {
+				line-height: 3rem;
+			}
+			@media @tablet {
+				margin: 0 auto;
+			}
 		}
-		.btn {
-			.button(@font-color, @button-bg, 50%, 1.5rem);
-		}
-		#project-list {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: row;
-			.project {
-				color: @font-color;
-				list-style-type: none;
-				max-width: 100%;
-				width: 100%;
-				min-height: 100px;
-				display: block;
-				background-color: @teal;
-				img {
-					width: 100%;
-					border: 2px solid @purple;
+		#projects {
+			background: @grey;
+			color: @purple;
+			margin: 25px auto 0 auto;
+			width: 100%;
+			padding: 10% 15%;
+			h3 {
+				font-size: 2.5rem;
+				margin-bottom: 25px;
+				text-align: center;
+				line-height: 3.5rem;
+			}
+			.btn {
+				.button(@font-color, @button-bg, 50%, 1.5rem);
+				&:hover {
+					background: @orange;
 				}
 			}
-			.project-info {
-				font-size: 2rem;
-				color: @orange;
-				text-align: center;
-				max-width: 100%;
-				font-weight: 700;
-				margin: 0 auto 35px auto;
-				padding: 0 0 0 20px;
-				text-transform: capitalize;
+			#project-list {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				.project {
+					color: @font-color;
+					max-width: 100%;
+					width: 100%;
+					display: block;
+					margin: 0 2.5% 0 2.5%;
+					h4 {
+						font-family: @copy;
+					}
+					img {
+						width: 100%;
+						border: 1px solid @teal;
+						margin-bottom: 20%;
+					}
+					.project-info {
+						font-size: 2rem;
+						color: @orange;
+						text-align: center;
+						max-width: 100%;
+						margin: 0 auto;
+						text-transform: capitalize;
+					}
+					@media @tablet {
+						max-width: 40%;
+						flex-direction: row;
+						margin: 0 auto;
+					}
+				}
+				margin-bottom: 25px;
+			}
+			@media @tablet {
+				padding: 5%;
 			}
 		}
 	}

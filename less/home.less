@@ -5,6 +5,9 @@
 		margin: -10% auto 0 auto;
 		background: @orange;
 		color: @grey;
+		@media @tablet {
+			padding-top: 75px;
+		}
 	}
 	#supporter {
 		background: @grey;
@@ -17,7 +20,7 @@
 		}
 		img {
 			max-width: 100%;
-			border: 2px solid @green;
+			border: 2px solid @grey;
 			margin-bottom: 25px;
 		}
 		h3 {
@@ -41,5 +44,10 @@
 	}
 	.btn {
 		.button(@font-color, @button-bg, 50%, 1.5rem);
+		&:hover {
+			background-color: @green;
+			color: @teal;
+			border: 2px solid @teal;
+		}
 	}
 }

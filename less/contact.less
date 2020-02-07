@@ -2,6 +2,7 @@
 
 .contact-page {
 	background-image: url('/img/contact-bg.jpg');
+	background-position: top;
 }
 
 #content-container {
@@ -15,6 +16,12 @@
 			margin-bottom: 25px;
 			letter-spacing: 0.3rem;
 			text-align: center;
+			@media @tablet {
+			}
+		}
+		@media @tablet {
+			margin: 0 auto;
+			padding-top: 50px;
 		}
 	}
 	#info {
@@ -26,7 +33,7 @@
 		.btn {
 			.button(@font-color, @button-bg, 50%, 1.5rem);
 			border: 2px solid @orange;
-			&hover {
+			&:hover {
 				background: @orange;
 			}
 		}

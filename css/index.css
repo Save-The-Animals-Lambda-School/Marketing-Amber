@@ -135,6 +135,10 @@ html {
 body {
   color: #fcfafa;
   background: #223843;
+  background-image: url('/img/elephant-bg.jpg');
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 html,
 body {
@@ -186,6 +190,8 @@ body {
 }
 nav {
   display: flex;
+  flex-basis: auto;
+  align-items: center;
   background-color: #542344;
   padding: 5%;
   width: 100%;
@@ -205,35 +211,32 @@ nav a:focus,
 nav:visited:focus {
   color: #d0e17b;
 }
+nav .logo {
+  max-width: 100px;
+  margin-top: 15px;
+  border: 1px solid #fcfafa;
+}
+@media (min-width: 800px) {
+  nav {
+    padding: 10px;
+    display: unset;
+    border: 2px dotted #421c35;
+  }
+  nav a {
+    padding: 15px;
+  }
+}
 header {
   display: block;
-  background-color: #223843;
-  background-image: url('/img/elephant-bg.jpg');
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 95vh;
-  max-height: 325px;
   width: 100%;
-}
-header h1,
-header h2 {
-  text-align: center;
-  margin: 5% auto 3% auto;
-  padding: 15px;
-  background-color: transparent;
-  font-family: 'Anton', Ariel, Helvetica, Sans-serif;
 }
 header h1 {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.45rem;
-}
-header h2 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
-  text-transform: capitalize;
-  letter-spacing: 0.35rem;
+  text-align: center;
+  font-family: 'Anton', Ariel, Helvetica, Sans-serif;
+  margin: 7% auto;
 }
 #footer {
   background: #542344;
@@ -245,6 +248,11 @@ header h2 {
   margin: -10% auto 0 auto;
   background: #f26f39;
   color: #fcfafa;
+}
+@media (min-width: 800px) {
+  #content-container #intro {
+    padding-top: 75px;
+  }
 }
 #content-container #supporter {
   background: #fcfafa;
@@ -258,7 +266,7 @@ header h2 {
 }
 #content-container #supporter img {
   max-width: 100%;
-  border: 2px solid #d0e17b;
+  border: 2px solid #fcfafa;
   margin-bottom: 25px;
 }
 #content-container #supporter h3 {
@@ -282,7 +290,7 @@ header h2 {
 #content-container .btn {
   color: #fcfafa;
   background-color: #542344;
-  border: 1px solid #d0e17b;
+  border: 2px solid #d0e17b;
   border-radius: 10px;
   font-size: 1.5rem;
   padding: 10px;
@@ -294,41 +302,50 @@ header h2 {
   display: block;
 }
 #content-container .btn:hover {
-  color: #4b2d2d;
+  color: #ffffff;
+  background-color: #542344;
+  border: 2px solid #d0e17b;
+}
+#content-container .btn:hover {
   background-color: #d0e17b;
+  color: #223843;
+  border: 2px solid #223843;
 }
 .projects-page {
   background-image: url('/img/projects-bg.jpg');
+  background-size: contain;
 }
-.projects-page h2 {
-  font-size: 2.5rem;
-  margin-bottom: 25px;
-  letter-spacing: 0.1rem;
-  text-align: center;
-}
-#content-container #intro {
+.projects-page #content-container #intro {
   display: block;
   margin: -10% auto 0 auto;
   background: #f26f39;
   color: #fcfafa;
 }
-#content-container #projects {
+.projects-page #content-container #intro h3 {
+  line-height: 3rem;
+}
+@media (min-width: 800px) {
+  .projects-page #content-container #intro {
+    margin: 0 auto;
+  }
+}
+.projects-page #content-container #projects {
   background: #fcfafa;
   color: #542344;
   margin: 25px auto 0 auto;
   width: 100%;
   padding: 10% 15%;
 }
-#content-container #projects h3 {
+.projects-page #content-container #projects h3 {
   font-size: 2.5rem;
   margin-bottom: 25px;
   text-align: center;
   line-height: 3.5rem;
 }
-#content-container #projects .btn {
+.projects-page #content-container #projects .btn {
   color: #fcfafa;
   background-color: #542344;
-  border: 1px solid #d0e17b;
+  border: 2px solid #d0e17b;
   border-radius: 10px;
   font-size: 1.5rem;
   padding: 10px;
@@ -339,40 +356,58 @@ header h2 {
   margin: 0 auto;
   display: block;
 }
-#content-container #projects .btn:hover {
-  color: #4b2d2d;
-  background-color: #d0e17b;
+.projects-page #content-container #projects .btn:hover {
+  color: #ffffff;
+  background-color: #542344;
+  border: 2px solid #d0e17b;
 }
-#content-container #projects #project-list {
+.projects-page #content-container #projects .btn:hover {
+  background: #f26f39;
+}
+.projects-page #content-container #projects #project-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-bottom: 25px;
 }
-#content-container #projects #project-list .project {
+.projects-page #content-container #projects #project-list .project {
   color: #fcfafa;
-  list-style-type: none;
   max-width: 100%;
   width: 100%;
-  min-height: 100px;
   display: block;
-  background-color: #223843;
+  margin: 0 2.5% 0 2.5%;
 }
-#content-container #projects #project-list .project img {
+.projects-page #content-container #projects #project-list .project h4 {
+  font-family: 'ABeeZee', Ariel, Helvetica, Sans-serif;
+}
+.projects-page #content-container #projects #project-list .project img {
   width: 100%;
-  border: 2px solid #542344;
+  border: 1px solid #223843;
+  margin-bottom: 20%;
 }
-#content-container #projects #project-list .project-info {
+.projects-page #content-container #projects #project-list .project .project-info {
   font-size: 2rem;
   color: #f26f39;
   text-align: center;
   max-width: 100%;
-  font-weight: 700;
-  margin: 0 auto 35px auto;
-  padding: 0 0 0 20px;
+  margin: 0 auto;
   text-transform: capitalize;
+}
+@media (min-width: 800px) {
+  .projects-page #content-container #projects #project-list .project {
+    max-width: 40%;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 800px) {
+  .projects-page #content-container #projects {
+    padding: 5%;
+  }
 }
 .contact-page {
   background-image: url('/img/contact-bg.jpg');
+  background-position: top;
 }
 #content-container #intro {
   display: block;
@@ -386,6 +421,12 @@ header h2 {
   letter-spacing: 0.3rem;
   text-align: center;
 }
+@media (min-width: 800px) {
+  #content-container #intro {
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
 #content-container #info {
   background: #fcfafa;
   color: #542344;
@@ -396,7 +437,7 @@ header h2 {
 #content-container #info .btn {
   color: #fcfafa;
   background-color: #542344;
-  border: 1px solid #d0e17b;
+  border: 2px solid #d0e17b;
   border-radius: 10px;
   font-size: 1.5rem;
   padding: 10px;
@@ -409,10 +450,11 @@ header h2 {
   border: 2px solid #f26f39;
 }
 #content-container #info .btn:hover {
-  color: #4b2d2d;
-  background-color: #d0e17b;
+  color: #ffffff;
+  background-color: #542344;
+  border: 2px solid #d0e17b;
 }
-#content-container #info .btnhover {
+#content-container #info .btn:hover {
   background: #f26f39;
 }
 #content-container #info form {

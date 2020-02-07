@@ -9,10 +9,14 @@ html {
 body {
 	color: @font-color;
 	background: @main-bg;
+	background-image: url('/img/elephant-bg.jpg');
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 html,
 body {
-	font-family: 'ABeeZee', Ariel, Helvetica, Sans-serif;
+	font-family: @copy;
 }
 #content-container {
 	p {
@@ -25,7 +29,7 @@ body {
 	h3,
 	h4,
 	h5 {
-		font-family: 'Anton', Ariel, Helvetica, Sans-serif;
+		font-family: @headings;
 	}
 
 	h1 {
