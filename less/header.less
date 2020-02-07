@@ -10,5 +10,16 @@ header {
 		text-align: center;
 		font-family: 'Anton', Ariel, Helvetica, Sans-serif;
 		margin: 7% auto;
+		@media @desktop {
+			padding-top: 5%;
+			margin: 0 auto;
+		}
+	}
+	@media @desktop {
+		max-width: 1200px;
+		border: 1px solid @teal;
+		border-bottom: none;
+		margin: 0 auto;
+		background-color: @orange;
 	}
 }
