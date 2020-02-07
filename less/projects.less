@@ -1,4 +1,14 @@
 // Projects Page Styles
+
+.projects-page {
+	background-image: url('/img/projects-bg.jpg');
+	h2 {
+		font-size: 2.5rem;
+		margin-bottom: 25px;
+		letter-spacing: 0.1rem;
+		text-align: center;
+	}
+}
 #content-container {
 	#intro {
 		display: block;
@@ -13,13 +23,41 @@
 		width: 100%;
 		padding: 10% 15%;
 		h3 {
-			font-size: 2rem;
+			font-size: 2.5rem;
 			margin-bottom: 25px;
-			letter-spacing: 0.3rem;
 			text-align: center;
+			line-height: 3.5rem;
 		}
 		.btn {
 			.button(@font-color, @button-bg, 50%, 1.5rem);
+		}
+		#project-list {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.project {
+				color: @font-color;
+				list-style-type: none;
+				max-width: 100%;
+				width: 100%;
+				min-height: 100px;
+				display: block;
+				background-color: @teal;
+				img {
+					width: 100%;
+					border: 2px solid @purple;
+				}
+			}
+			.project-info {
+				font-size: 2rem;
+				color: @orange;
+				text-align: center;
+				max-width: 100%;
+				font-weight: 700;
+				margin: 0 auto 35px auto;
+				padding: 0 0 0 20px;
+				text-transform: capitalize;
+			}
 		}
 	}
 }

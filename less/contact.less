@@ -1,5 +1,9 @@
 // Contact Page Styles
 
+.contact-page {
+	background-image: url('/img/contact-bg.jpg');
+}
+
 #content-container {
 	#intro {
 		display: block;
@@ -24,6 +28,33 @@
 			border: 2px solid @orange;
 			&hover {
 				background: @orange;
+			}
+		}
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			width: 100%;
+			label {
+				font-size: 2rem;
+				color: @teal;
+			}
+			input {
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 10px 15px;
+			}
+			fieldset {
+				border: 1px solid @teal;
+				padding: 20px;
+				margin-bottom: 25px;
+				legend {
+					text-transform: capitalize;
+					text-align: center;
+					font-size: 2rem;
+					margin-bottom: 25px;
+					padding: 0 10px;
+				}
 			}
 		}
 	}

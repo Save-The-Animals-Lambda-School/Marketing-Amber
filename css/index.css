@@ -256,6 +256,11 @@ header h2 {
 #content-container #supporter button {
   border: 2px solid #f26f39;
 }
+#content-container #supporter img {
+  max-width: 100%;
+  border: 2px solid #d0e17b;
+  margin-bottom: 25px;
+}
 #content-container #supporter h3 {
   font-size: 2rem;
   margin-bottom: 25px;
@@ -292,6 +297,15 @@ header h2 {
   color: #4b2d2d;
   background-color: #d0e17b;
 }
+.projects-page {
+  background-image: url('/img/projects-bg.jpg');
+}
+.projects-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
 #content-container #intro {
   display: block;
   margin: -10% auto 0 auto;
@@ -306,10 +320,10 @@ header h2 {
   padding: 10% 15%;
 }
 #content-container #projects h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 25px;
-  letter-spacing: 0.3rem;
   text-align: center;
+  line-height: 3.5rem;
 }
 #content-container #projects .btn {
   color: #fcfafa;
@@ -328,6 +342,37 @@ header h2 {
 #content-container #projects .btn:hover {
   color: #4b2d2d;
   background-color: #d0e17b;
+}
+#content-container #projects #project-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+#content-container #projects #project-list .project {
+  color: #fcfafa;
+  list-style-type: none;
+  max-width: 100%;
+  width: 100%;
+  min-height: 100px;
+  display: block;
+  background-color: #223843;
+}
+#content-container #projects #project-list .project img {
+  width: 100%;
+  border: 2px solid #542344;
+}
+#content-container #projects #project-list .project-info {
+  font-size: 2rem;
+  color: #f26f39;
+  text-align: center;
+  max-width: 100%;
+  font-weight: 700;
+  margin: 0 auto 35px auto;
+  padding: 0 0 0 20px;
+  text-transform: capitalize;
+}
+.contact-page {
+  background-image: url('/img/contact-bg.jpg');
 }
 #content-container #intro {
   display: block;
@@ -369,4 +414,31 @@ header h2 {
 }
 #content-container #info .btnhover {
   background: #f26f39;
+}
+#content-container #info form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+#content-container #info form label {
+  font-size: 2rem;
+  color: #223843;
+}
+#content-container #info form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+#content-container #info form fieldset {
+  border: 1px solid #223843;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+#content-container #info form fieldset legend {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  padding: 0 10px;
 }
