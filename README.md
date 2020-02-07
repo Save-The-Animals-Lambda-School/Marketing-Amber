@@ -30,11 +30,11 @@ Key Conservation is helping conservationists receive critical funding and increa
 
 ### Team: Save the Animals – Team 1
 
--   _[Bonnie Turnbeaugh]_(https://github.com/BonnieJT) _Team Lead, Frontend React Engineer_
--   _[Nick Durbin]_(https://github.com/nickdurbin) _Backend Engineer_
--   _[Robert Barry]_(https://github.com/Iyehvah) _Frontend Architect_
--   _[Amber Chunn]_(https://github.com/amberchunn) _Frontend UI Developer, UI Design_
--   _[Nirajan Kharel]_(https://github.com/nkharel) _Frontend UI Developer_
+-   [_Bonnie Turnbeaugh_](https://github.com/BonnieJT) _Team Lead, Frontend React Engineer_
+-   [_Nick Durbin_](https://github.com/nickdurbin) _Backend Engineer_
+-   [_Robert Barry_](https://github.com/Iyehvah) _Frontend Architect_
+-   [_Amber Chunn_](https://github.com/amberchunn) _Frontend UI Developer, UI Design_
+-   [_Nirajan Kharel_](https://github.com/nkharel) _Frontend UI Developer_
 
 ### Primary Roles: UI Developer & UI Designer
 
@@ -47,7 +47,7 @@ Key Conservation is helping conservationists receive critical funding and increa
 -   Descriptions about the product features that are offered is key
 -   At least one other page required
 
-### Website Pages
+## Website Pages
 
 #### Home Page - HTML & LESS
 
