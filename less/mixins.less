@@ -1,4 +1,4 @@
-.button(@color, @background-color, @width, @font-size) {
+.button-style(@color, @background-color, @width, @font-size) {
 	color: @color;
 	background-color: @background-color;
 	border: 2px solid @border;
@@ -10,10 +10,18 @@
 	width: @width;
 	cursor: pointer;
 	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	&:hover {
 		color: lighten(@color, 10%);
-		background-color: @background-color;
 		border: 2px solid @green;
 	}
+}
+
+.btn-large(@width, @padding-top) {
+	display: inline-block;
+	width: @width;
+	background-color: transparent;
+	border: none;
+	padding-top: @padding-top;
+	margin: 0 auto;
 }
