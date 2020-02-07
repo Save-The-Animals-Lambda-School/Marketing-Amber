@@ -2,18 +2,35 @@
 
 nav {
 	display: flex;
+	flex-basis: auto;
+	align-items: center;
 	background-color: @purple;
 	padding: 5%;
 	width: 100%;
 	justify-content: center;
-}
-nav a,
-nav a:visited {
-	font-size: 2rem;
-	color: @grey;
-	padding: 0 10px 0 10px;
-}
-nav a:hover,
-nav a:focus {
-	color: @green;
+	a,
+	&:visited {
+		color: @green;
+		text-decoration: none;
+		font-size: 2rem;
+		color: @grey;
+		padding: 0 10px 0 10px;
+		&:hover,
+		&:focus {
+			color: @green;
+		}
+	}
+	.logo {
+		max-width: 100px;
+		margin-top: 15px;
+		border: 1px solid @grey;
+	}
+	@media @tablet {
+		padding: 10px;
+		display: unset;
+		border: 2px dotted darken(@purple, 5%);
+		a {
+			padding: 15px;
+		}
+	}
 }

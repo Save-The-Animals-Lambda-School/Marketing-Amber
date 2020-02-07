@@ -1,39 +1,70 @@
 // Contact Page Styles
 
-#intro {
-	display: block;
-	margin: -10% auto 0 auto;
-	background: @orange;
-	color: @grey;
+.contact-page {
+	background-image: url('/img/contact-bg.jpg');
+	background-size: cover;
+	background-position: left;
+	background-repeat: repeat;
 }
-#info {
-	background: @grey;
-	color: @purple;
-	margin: 25px auto 0 auto;
-	width: 100%;
-	padding: 10% 15%;
-}
-#info button {
-	border: 2px solid @orange;
-}
-#info h3 {
-	font-size: 2rem;
-	margin-bottom: 25px;
-	letter-spacing: 0.3rem;
-	text-align: center;
-}
-button {
-	width: 50%;
-	background: @purple;
-	color: @grey;
-	cursor: pointer;
-	padding: 10px 20px;
-	margin: 0 auto;
-	display: block;
-	border: 2px solid @border;
-	border-radius: 50px;
-	font-size: 1.5rem;
-	&hover {
+
+#content-container {
+	#intro {
+		display: block;
+		margin: -10% auto 0 auto;
 		background: @orange;
+		color: @grey;
+		h3 {
+			font-size: 2rem;
+			margin-bottom: 25px;
+			letter-spacing: 0.3rem;
+			text-align: center;
+			@media @tablet {
+			}
+		}
+		@media @tablet {
+			margin: 0 auto;
+			padding-top: 50px;
+		}
+	}
+	#info {
+		background: @grey;
+		color: @purple;
+		margin: 25px auto 0 auto;
+		width: 100%;
+		padding: 10% 15%;
+		.btn {
+			.button(@font-color, @button-bg, 50%, 1.5rem);
+			border: 2px solid @orange;
+			&:hover {
+				background: @orange;
+			}
+		}
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			width: 100%;
+			label {
+				font-size: 2rem;
+				color: @teal;
+			}
+			input {
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 10px 15px;
+			}
+			fieldset {
+				border: 1px solid @teal;
+				padding: 20px;
+				margin-bottom: 25px;
+				legend {
+					text-transform: capitalize;
+					text-align: center;
+					font-size: 2rem;
+					margin-bottom: 25px;
+					padding: 0 10px;
+				}
+			}
+		}
 	}
 }

@@ -21,7 +21,7 @@
 		/>
 		<link href="css/index.css" rel="stylesheet" />
 	</head>
-	<body>
+	<body class="projects-page">
 		<!--[if lt IE 7]>
 			<p class="browsehappy">
 				You are using an <strong>outdated</strong> browser. Please
@@ -31,16 +31,18 @@
 
 		<header>
 			<nav id="main-nav">
+				<img src="img/sta-logo-sm.png" alt="Save the Animals Logo" class="logo" />
+
 				<a href="index.html">Home</a>
 				<a href="#">About</a>
 				<a href="#">Projects</a>
 				<a href="contact.html">Contact</a>
 			</nav>
-			<h1>Project Portfolio</h1>
-			<h2>Together, we've made a difference</h2>
+			<h1>Recent Projects</h1>
 		</header>
 		<div id="content-container">
 			<section id="intro" class="container">
+				<h3>Together, we've made a difference</h3>
 				<p>
 					Save the Animals has helped conservationists and their supporters
 					connect on a deeper level. Supporters now have actionable steps they can
@@ -52,12 +54,41 @@
 
 			<section id="projects" class="container">
 				<h3>See Some of Our Recent Conservation Project Results</h3>
-				<ul id="project-list">
-					<li class="project">Project One</li>
-					<li class="project">Project Two</li>
-					<li class="project">Project Three</li>
-					<li class="project">Project Four</li>
-				</ul>
+				<div id="project-list">
+					<div class="project">
+						<h4 class="project-info">PANTHERA</h4>
+						<img
+							src="img/project-001.jpg"
+							alt="Conservation project photo of a cheetah"
+							caption="Credit: Photo by Dean Bennett / Unsplash"
+						/>
+					</div>
+					<div class="project">
+						<h4 class="project-info">WILDLIFE CONSERVATION SOCIETY</h4>
+						<img
+							src="img/project-002.jpg"
+							alt="Conservation project photo of a tiger"
+							caption="Credit: Photo by Anthony Melone / Unsplash"
+						/>
+					</div>
+					<div class="project">
+						<h4 class="project-info">The World Wildlife Fund</h4>
+						<img
+							src="img/project-003.jpg"
+							alt="Conservation project photo of a panda"
+							caption="Credit: Photo by Sid Balachandran / Unsplash"
+						/>
+					</div>
+					<div class="project">
+						<h4 class="project-info">New South Wales Royal Fire Service</h4>
+						<img
+							src="img/project-004.jpg"
+							alt="Conservation project photo of a koala"
+							caption="Credit: Photo by Gilles Rolland / Unsplash"
+						/>
+					</div>
+				</div>
+				<button class="btn">Contact Us</button>
 			</section>
 			<section id="footer">
 				<p>&copy; Save the Animals</p>
