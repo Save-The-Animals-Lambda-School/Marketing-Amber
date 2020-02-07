@@ -6,14 +6,17 @@ nav {
 	padding: 5%;
 	width: 100%;
 	justify-content: center;
-}
-nav a,
-nav a:visited {
-	font-size: 2rem;
-	color: @grey;
-	padding: 0 10px 0 10px;
-}
-nav a:hover,
-nav a:focus {
-	color: @green;
+
+	a,
+	&:visited {
+		color: @green;
+		text-decoration: none;
+		font-size: 2rem;
+		color: @grey;
+		padding: 0 10px 0 10px;
+		&:hover,
+		&:focus {
+			color: @green;
+		}
+	}
 }

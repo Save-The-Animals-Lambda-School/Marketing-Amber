@@ -140,45 +140,70 @@ html,
 body {
   font-family: 'ABeeZee', Ariel, Helvetica, Sans-serif;
 }
-p {
+#content-container p {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 25px;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+#content-container h1,
+#content-container h2,
+#content-container h3,
+#content-container h4,
+#content-container h5 {
   font-family: 'Anton', Ariel, Helvetica, Sans-serif;
 }
-h1 {
+#content-container h1 {
   font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.45rem;
 }
-h2 {
+#content-container h2 {
   font-size: 2.5rem;
   padding-bottom: 10px;
   text-transform: capitalize;
   letter-spacing: 0.35rem;
 }
-h4 {
+#content-container h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
 }
-a {
+#content-container a {
   color: #d0e17b;
   text-decoration: none;
 }
-a:hover,
-a:focus {
+#content-container a:hover,
+#content-container a:focus {
   color: #542344;
 }
-ul li {
+#content-container ul li {
   font-size: 1.5rem;
   list-style-type: square;
   margin: 0 0 15px 25px;
+}
+#content-container .container {
+  width: 80%;
+  padding: 5%;
+}
+nav {
+  display: flex;
+  background-color: #542344;
+  padding: 5%;
+  width: 100%;
+  justify-content: center;
+}
+nav a,
+nav:visited {
+  color: #d0e17b;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fcfafa;
+  padding: 0 10px 0 10px;
+}
+nav a:hover,
+nav:visited:hover,
+nav a:focus,
+nav:visited:focus {
+  color: #d0e17b;
 }
 header {
   display: block;
@@ -197,74 +222,151 @@ header h2 {
   margin: 5% auto 3% auto;
   padding: 15px;
   background-color: transparent;
+  font-family: 'Anton', Ariel, Helvetica, Sans-serif;
 }
-.container {
-  width: 80%;
-  padding: 5%;
+header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.45rem;
 }
-nav {
-  display: flex;
-  background-color: #542344;
-  padding: 5%;
-  width: 100%;
-  justify-content: center;
-}
-nav a,
-nav a:visited {
-  font-size: 2rem;
-  color: #fcfafa;
-  padding: 0 10px 0 10px;
-}
-nav a:hover,
-nav a:focus {
-  color: #d0e17b;
+header h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  letter-spacing: 0.35rem;
 }
 #footer {
   background: #542344;
   text-align: center;
   padding: 25px 0 2px 0;
 }
-#intro {
+#content-container #intro {
   display: block;
   margin: -10% auto 0 auto;
   background: #f26f39;
   color: #fcfafa;
 }
-#supporter {
+#content-container #supporter {
   background: #fcfafa;
   color: #542344;
   margin: 25px auto 0 auto;
   width: 100%;
   padding: 10% 15%;
 }
-#supporter button {
+#content-container #supporter button {
   border: 2px solid #f26f39;
 }
-#organizer h3,
-#supporter h3 {
+#content-container #supporter h3 {
   font-size: 2rem;
   margin-bottom: 25px;
   letter-spacing: 0.3rem;
   text-align: center;
 }
-#organizer {
+#content-container #organizer {
   background: #f26f39;
   width: 80%;
   margin: 25px auto 25px auto;
   padding-top: 50px;
 }
-button {
-  width: 50%;
-  background: #542344;
+#content-container #organizer h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+#content-container .btn {
   color: #fcfafa;
+  background-color: #542344;
+  border: 1px solid #d0e17b;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  width: 50%;
   cursor: pointer;
-  padding: 10px 20px;
   margin: 0 auto;
   display: block;
-  border: 2px solid #d0e17b;
-  border-radius: 50px;
-  font-size: 1.5rem;
 }
-button:hover {
-  background: #223843;
+#content-container .btn:hover {
+  color: #4b2d2d;
+  background-color: #d0e17b;
+}
+#content-container #intro {
+  display: block;
+  margin: -10% auto 0 auto;
+  background: #f26f39;
+  color: #fcfafa;
+}
+#content-container #projects {
+  background: #fcfafa;
+  color: #542344;
+  margin: 25px auto 0 auto;
+  width: 100%;
+  padding: 10% 15%;
+}
+#content-container #projects h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+#content-container #projects .btn {
+  color: #fcfafa;
+  background-color: #542344;
+  border: 1px solid #d0e17b;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  width: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+#content-container #projects .btn:hover {
+  color: #4b2d2d;
+  background-color: #d0e17b;
+}
+#content-container #intro {
+  display: block;
+  margin: -10% auto 0 auto;
+  background: #f26f39;
+  color: #fcfafa;
+}
+#content-container #intro h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+#content-container #info {
+  background: #fcfafa;
+  color: #542344;
+  margin: 25px auto 0 auto;
+  width: 100%;
+  padding: 10% 15%;
+}
+#content-container #info .btn {
+  color: #fcfafa;
+  background-color: #542344;
+  border: 1px solid #d0e17b;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  width: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #f26f39;
+}
+#content-container #info .btn:hover {
+  color: #4b2d2d;
+  background-color: #d0e17b;
+}
+#content-container #info .btnhover {
+  background: #f26f39;
 }

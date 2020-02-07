@@ -1,39 +1,25 @@
 // Projects Page Styles
-
-#intro {
-	display: block;
-	margin: -10% auto 0 auto;
-	background: @orange;
-	color: @grey;
-}
-#projects {
-	background: @grey;
-	color: @purple;
-	margin: 25px auto 0 auto;
-	width: 100%;
-	padding: 10% 15%;
-}
-#projects button {
-	border: 2px solid @orange;
-}
-#projects h3 {
-	font-size: 2rem;
-	margin-bottom: 25px;
-	letter-spacing: 0.3rem;
-	text-align: center;
-}
-button {
-	width: 50%;
-	background: @purple;
-	color: @grey;
-	cursor: pointer;
-	padding: 10px 20px;
-	margin: 0 auto;
-	display: block;
-	border: 2px solid @border;
-	border-radius: 50px;
-	font-size: 1.5rem;
-	&hover {
+#content-container {
+	#intro {
+		display: block;
+		margin: -10% auto 0 auto;
 		background: @orange;
+		color: @grey;
+	}
+	#projects {
+		background: @grey;
+		color: @purple;
+		margin: 25px auto 0 auto;
+		width: 100%;
+		padding: 10% 15%;
+		h3 {
+			font-size: 2rem;
+			margin-bottom: 25px;
+			letter-spacing: 0.3rem;
+			text-align: center;
+		}
+		.btn {
+			.button(@font-color, @button-bg, 50%, 1.5rem);
+		}
 	}
 }
